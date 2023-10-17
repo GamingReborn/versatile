@@ -48,10 +48,22 @@ html {
         position: absolute;
         width: 48px;
         height: 48px;
-        top: 2%;
+        top: 1%;
         left: 0;
       }
       .logo:hover {
+        cursor: pointer;
+      }
+      .header {
+        top: 0%;
+        right: 0%;
+        margin: 20px;
+        position: absolute;
+          overflow: hidden;
+      }
+      .material-symbols-outlined {
+        font-size: 48px;
+        margin: 10px;
         cursor: pointer;
       }
       input[name="url"] {
@@ -68,7 +80,7 @@ html {
         margin: 0 0 16px 0;
         font-family: 'psreg';
         padding: 16px;
-        height: 20px;
+        height: 16px;
         text-align: center;
         width: 50%;
         outline: transparent;
@@ -76,10 +88,15 @@ html {
       input[name="url"]:placeholder {
           color: #ffffff;
       }
+      input[name="url"]:hover {
+        transition-timing-function: ease-out;
+        transition: 1.5s;
+        width: 57.5%;
+    }
       input[name="url"]:focus {
         transition-timing-function: ease-out;
         transition: 1.5s;
-        width: 75%;
+        width: 65%;
     }
       input[type="submit"] {
     background-color: #daff46;
